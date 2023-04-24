@@ -109,7 +109,10 @@
             </p>
           </article>
           <article class="col-12 col-lg-6 order-lg-1">
-            <form action="">
+            <form
+              action="https://formsubmit.co/your@mail.com"
+              method="POST"
+            >
               <div class="mb-3">
                 <label class="form-label" for="name">Nombre:</label>
                 <input
@@ -121,7 +124,6 @@
                   required
                 />
               </div>
-
               <div class="mb-3">
                 <label class="form-label" for="name">Email:</label>
                 <input
@@ -146,6 +148,16 @@
               </div>
               <div class="mb-3">
                 <input class="btn btn-lg btn-success" type="submit" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://127.0.0.1:5500/thanks.html"
+                />
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Comentario del curso de Bootstrap"
+                />
               </div>
             </form>
           </article>
